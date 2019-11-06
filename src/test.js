@@ -5,18 +5,17 @@ fetch('http://localhost:3000/beers')
 .then(r => r.json())
 .then(beers =>{
   beers.forEach(beer => {
-    listUl.innerHTML += ` <li id='${beer.id}' class="list-group-item">${beer.name}</li>`
+    listUl.innerHTML += ` <li id='${beer.id}'class="list-group-item">${beer.name}</li>`
   })
   // liBeer = listUl.document.querySelector('.list-group-item')
   listUl.addEventListener('click', event => {
-    divBeer.innerHTML = ''
-
     if (event.target.tagName == 'LI'){
       fetch (`http://localhost:3000/beers/${event.target.id}`)
       .then(r => r.json())
       .then(beer => {
+        if (divBeer.innerHTML){
 
-
+        }
         divBeer.innerHTML += `<h1>${beer.name}</h1>
         <img src="${beer.image_url}">
 
@@ -29,15 +28,14 @@ fetch('http://localhost:3000/beers')
         button = document.querySelector('#edit-beer')
         button.addEventListener('click', event => {
 
-        let textArea = document.querySelector('#input')
+        let textarea = document.querySelector('#input')
           fetch (`http://localhost:3000/beers/${event.target.dataset.id}`, {
             method: 'PATCH',
             headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
+              'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-              description: textArea.value
+              description: textarea.value
             })
           }
           )
@@ -45,8 +43,8 @@ fetch('http://localhost:3000/beers')
           .then(respond => {
             // debugger
             respond.description
-            let newTextArea = document.querySelector('#input')
-            newTextArea.innerText = respond.description
+            let divBeerNew = document.querySelector('#beer-detail')
+            textarea.innerText = respond.description
           })
         })
       })

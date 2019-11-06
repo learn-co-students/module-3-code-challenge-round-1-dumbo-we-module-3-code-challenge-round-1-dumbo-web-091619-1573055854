@@ -5,7 +5,7 @@
       "name": "Buzz",
       "tagline": "A Real Bitter Experience.",
       "first_brewed": "09/2007",
-      "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+      "description": "No beer before 5 p.m.",
       "image_url": "https://images.punkapi.com/v2/keg.png",
       "food_pairing": [
         "Spicy chicken tikka masala",
@@ -110,7 +110,7 @@
       "name": "Bramling X",
       "tagline": "Single Hop IPA Series - 2011.",
       "first_brewed": "01/2011",
-      "description": "Good old Bramling Cross is elegant, refined, assured, (boring) and understated. Understated that is unless you hop the living daylights out of a beer with it. This is Bramling Cross re-invented and re-imagined, and shows just what can be done with English hops if you use enough of them. Poor Bramling Cross normally gets lost in a woeful stream of conformist brown ales made by sleepy cask ale brewers. But not anymore. This beer shows that British hops do have some soul, and is a fruity riot of blackberries, pears, and plums. Reminds me of the bramble, apple and ginger jam my grandmother used to make.",
+      "description": "123",
       "image_url": "https://images.punkapi.com/v2/10.png",
       "food_pairing": [
         "Warm blackberry pie",
@@ -186,7 +186,7 @@
       "name": "Mixtape 8",
       "tagline": "An Epic Fusion Of Old Belgian, American New Wave, And Scotch Whisky.",
       "first_brewed": "01/2012",
-      "description": "This recipe is for the Belgian Tripel base. A blend of two huge oak aged beers – half a hopped up Belgian Tripel, and half a Triple India Pale Ale. Both aged in single grain whisky barrels for two years and blended, each beer brings its own character to the mix. The Belgian Tripel comes loaded with complex spicy, fruity esters, and punchy citrus hop character.",
+      "description": "mixtape 8",
       "image_url": "https://images.punkapi.com/v2/15.png",
       "food_pairing": [
         "Coriander & chilli crab cakes",
@@ -306,7 +306,7 @@
       "name": "Storm",
       "tagline": "Islay Whisky Aged IPA.",
       "first_brewed": "12/2007",
-      "description": "Dark and powerful Islay magic infuses this tropical sensation of an IPA. Using the original Punk IPA as a base, we boosted the ABV to 8% giving it some extra backbone to stand up to the peated smoke imported directly from Islay.",
+      "description": "123",
       "image_url": "https://images.punkapi.com/v2/23.png",
       "food_pairing": [
         "Oysters",
