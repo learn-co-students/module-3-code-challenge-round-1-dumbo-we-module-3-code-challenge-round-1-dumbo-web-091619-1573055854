@@ -44,7 +44,7 @@ fetch(`http://localhost:3000/beers`)
     function editBeer(event, beer) {
 
         // I was having trouble getting the new description come through so I will do a demonstrative parth with the old value that comes through
-        let newDesc = event.target.value
+        let newDesc = beer.description
 
         fetch(`http://localhost:3000/beers/${beer.id}`, {
             method: 'PATCH',
@@ -59,6 +59,8 @@ fetch(`http://localhost:3000/beers`)
         .then((description) => {
             console.log(description)
         })
+
+
 
         // I intended to pessimistically attach the new description to the DOM at this point
 
