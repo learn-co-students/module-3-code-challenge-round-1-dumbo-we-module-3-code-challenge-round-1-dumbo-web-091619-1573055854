@@ -1,4 +1,4 @@
-# Module 3 JS Code Challenge
+<!-- # Module 3 JS Code Challenge
 
 ## Objectives
 
@@ -42,19 +42,19 @@ That's it. You will have a server running on `localhost:3000` that serves the JS
 
 ## Deliverables and How to Approach
 
-For this challenge, it is important to work iteratively, one feature at a time, before moving on to the next. You should **prioritize making code that works over attempting all of the deliverables.**
+For this challenge, it is important to work iteratively, one feature at a time, before moving on to the next. You should **prioritize making code that works over attempting all of the deliverables.** -->
 
-### Step 1 - Display All Beer Names
+<!-- ### Step 1 - Display All Beer Names
 
-When the page loads, I should see a list of all of the beer names retrieved from the API on the left hand side of the screen. The API endpoint we need to retrieve all the beers is a conventional RESTful route
+When the page loads, I should see a list of all of the beer names retrieved from the API on the left hand side of the screen. The API endpoint we need to retrieve all the beers is a conventional RESTful route -->
 
-* **Route:** GET `http://localhost:3000/beers`
-
+<!-- * **Route:** GET `http://localhost:3000/beers` -->
+<!-- 
 #### Styling
 
-[Bootstrap](https://getbootstrap.com/docs/3.3/components/#list-group) is loaded into this project via a link tag in the head of the html. Generally, do not worry about styling in this application.
+[Bootstrap](https://getbootstrap.com/docs/3.3/components/#list-group) is loaded into this project via a link tag in the head of the html. Generally, do not worry about styling in this application. -->
 
-**One important point** is that for the beer names to show up correctly, the html should have the following class names:
+<!-- **One important point** is that for the beer names to show up correctly, the html should have the following class names:
 
 ```html
 <ul class="list-group">
@@ -62,35 +62,35 @@ When the page loads, I should see a list of all of the beer names retrieved from
   <li class="list-group-item">Beer title 2</li>
   /* etc... */
 </ul>
-```
-
+``` -->
+<!-- 
 ### Step 2 - Display Single Beer Details
 
 When I click a beer name, the application should reveal more information about that particular beer.
 See the example above for the additional information that should be displayed.
 
-* **Route:** GET `http://localhost:3000/beers/:id`
+* **Route:** GET `http://localhost:3000/beers/:id` -->
 
-The beer details should be added to this div
+<!-- The beer details should be added to this div
 
 ```html
 <div id="beer-detail">
 
 </div>
-```
-The html should look something like:
+``` -->
+<!-- The html should look something like: -->
 
-```html
-<h1>Beer Name</h1>
-<img src="<add beer img url here>">
-<h3>Beer Tagline</h3>
-<textarea>Beer Description</textarea>
-<button id="edit-beer" class="btn btn-info">
-  Save
-</button>
-```
+<!-- ```html -->
+<!-- <h1>Beer Name</h1> -->
+<!-- <img src="<add beer img url here>"> -->
+<!-- <h3>Beer Tagline</h3> -->
+<!-- <textarea>Beer Description</textarea> -->
+<!-- <button id="edit-beer" class="btn btn-info"> -->
+  <!-- Save -->
+<!-- </button> -->
+<!-- ``` -->
 
-### Step 3 - Edit Beer Details
+<!-- ### Step 3 - Edit Beer Details
 
 When looking at the details of a beer, I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database. The edited beer should also update the DOM. For example, if I update the details of "Beer A" then click on another beer, when I go back to "Beer A", the description should be updated.
 
@@ -106,15 +106,15 @@ To update a beer you'll need to make a PATCH request
     'Content-Type': 'application/json',
     'Accept': 'application/json'
   }
-  ```
-
+  ``` -->
+<!-- 
   **Important Notes:**
   * For all intents and purposes, PATCH behaves the same as POST. If you know how to POST, you know how to PATCH
-  * When using `fetch` to make a PATCH request, be sure to capitalize method: 'PATCH'
+  * When using `fetch` to make a PATCH request, be sure to capitalize method: 'PATCH' -->
 
-
+<!-- 
 ## Considerations
 
 You are free to solve this in any way you choose. It is not required that you have ES6 classes or use Object Orientation. We would recommend beginning with a straightforward functional implementation and refactoring to objects as needed.
 
-When you click on an individual `<li>` you will need some of way of determining which particular beer was clicked on. How will you solve this problem?
+When you click on an individual `<li>` you will need some of way of determining which particular beer was clicked on. How will you solve this problem? -->
