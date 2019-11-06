@@ -43,7 +43,7 @@ function makeList(beer){
   }
 
   function showOneBeer(beer){
-    beerDIV.removeChildre
+    beerDIV.innerHTML = ""
     let h1 = document.createElement('h1')
     h1.innerText = beer.name
     let img = document.createElement('img')
@@ -58,11 +58,16 @@ function makeList(beer){
       button.className = "btn btn-info"
       button.innerText = "Save" 
       beerDIV.append(h1, img, h3, textarea, button)
-     beerDIV.addEventListener("submit", (e) => {
-         e.preventDefault()
-         console.log(e)
-     })
-
+     
+        document.addEventListener("submit", (e) => {
+            fetch(`http://localhost:3000/beers/${beer.id}`,{
+                method: "PATCH";
+                headers: {},
+            'Content-Type': 'application/json'
+                    }
+            
+            ).then().then
+        })
 
     }
    
