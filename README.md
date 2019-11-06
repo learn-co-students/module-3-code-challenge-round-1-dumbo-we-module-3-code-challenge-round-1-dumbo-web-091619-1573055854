@@ -44,7 +44,7 @@ That's it. You will have a server running on `localhost:3000` that serves the JS
 
 For this challenge, it is important to work iteratively, one feature at a time, before moving on to the next. You should **prioritize making code that works over attempting all of the deliverables.**
 
-### Step 1 - Display All Beer Names
+<!-- ### Step 1 - Display All Beer Names
 
 When the page loads, I should see a list of all of the beer names retrieved from the API on the left hand side of the screen. The API endpoint we need to retrieve all the beers is a conventional RESTful route
 
@@ -61,20 +61,20 @@ When the page loads, I should see a list of all of the beer names retrieved from
   <li class="list-group-item">Beer title 1</li>
   <li class="list-group-item">Beer title 2</li>
   /* etc... */
-</ul>
+</ul> -->
 ```
 
 ### Step 2 - Display Single Beer Details
 
-When I click a beer name, the application should reveal more information about that particular beer.
+ When I click a beer name, the application should reveal more information about that particular beer.
 See the example above for the additional information that should be displayed.
 
-* **Route:** GET `http://localhost:3000/beers/:id`
-
+<!-- * **Route:** GET `http://localhost:3000/beers/:id`
+<!-- 
 The beer details should be added to this div
 
 ```html
-<div id="beer-detail">
+<div id="beer-detail"> -->
 
 </div>
 ```
@@ -87,7 +87,7 @@ The html should look something like:
 <textarea>Beer Description</textarea>
 <button id="edit-beer" class="btn btn-info">
   Save
-</button>
+</button> -->
 ```
 
 ### Step 3 - Edit Beer Details
