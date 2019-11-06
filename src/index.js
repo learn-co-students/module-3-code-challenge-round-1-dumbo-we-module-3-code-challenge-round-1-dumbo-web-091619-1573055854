@@ -37,13 +37,33 @@ function addEventListenerToBeerListItem(beer) {
     const thisBeerListItem = document.querySelector(`#beer-${beer.id}`)
 
     thisBeerListItem.addEventListener("click", (event) => {
+
+        brewers_tips: "The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus."
+        contributed_by: "Sam Mason <samjbmason>"
+        description: "please god work"
+        first_brewed: "09/2007"
+        food_pairing: (3)["Spicy chicken tikka masala", "Grilled chicken quesadilla", "Caramel toffee cake"]
+        id: 1
+        image_url: "https://images.punkapi.com/v2/keg.png"
+        name: "Buzz"
+        tagline: "A Real Bitter Experience."
     
         beerDetailDiv.innerHTML = 
         `<h1>${beer.name}</h1><img src="${beer.image_url}"> <h3>${beer.tagline}</h3>
                 <textarea>${beer.description}</textarea>
                 <button id="edit-beer" class="btn btn-info">
                     Save
-        </button>`
+        </button>
+        <h4>Brewers Tips:</h4><p>${beer.brewers_tips}</p><h4>Contributed By: </h4><p>${beer.contributed_by}</p><h4>First Brewed: </h4><p>${beer.first_brewed}</p><h4>Food Pairing:</h4>`
+        
+        const tipList = document.createElement("ul")
+        beer.food_pairing.forEach(food => {
+            const tipItem = document.createElement("li")
+            tipItem.innerText = food
+            tipList.append(tipItem)
+        })
+
+        beerDetailDiv.append(tipList)
 
         const editButton = beerDetailDiv.querySelector("#edit-beer")
 
