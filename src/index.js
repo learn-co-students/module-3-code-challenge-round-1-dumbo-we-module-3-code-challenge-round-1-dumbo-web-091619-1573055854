@@ -34,7 +34,7 @@ fetch(`http://localhost:3000/beers`)
         beerDiv.append(beerSaveBtn)
 
         beerSaveBtn.addEventListener('click', function (event){
-            // event.preventDefault()
+            event.preventDefault()
             editBeer(event, beer)
             // debugger
         })
@@ -45,6 +45,9 @@ fetch(`http://localhost:3000/beers`)
 
         // I was having trouble getting the new description come through so I will do a demonstrative parth with the old value that comes through
         let newDesc = beer.description
+        console.log(event)
+
+
 
         fetch(`http://localhost:3000/beers/${beer.id}`, {
             method: 'PATCH',
